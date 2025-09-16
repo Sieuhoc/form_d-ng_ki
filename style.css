@@ -169,27 +169,34 @@ body {
 @media (max-width: 992px) {
     /* === BỐ CỤC MỚI CHO TOP BAR TRÊN MOBILE === */
     .top-bar-content {
-        display: flex;
-        flex-wrap: wrap; /* Cho phép các mục xuống dòng */
-        justify-content: space-between; /* Đẩy logo và nút về 2 phía */
-        align-items: center; /* Căn giữa logo và nút theo chiều dọc */
-        row-gap: 15px; /* Khoảng cách giữa hàng trên và hàng dưới */
-    }
-    .top-bar .logo {
-        order: 1; /* Logo đầu tiên */
-    }
-    .top-bar-button {
-        order: 2; /* Nút thứ hai */
-        margin-top: 0; /* Bỏ margin cũ */
-    }
-    .top-bar-text {
-        order: 3; /* Chữ nằm cuối cùng */
-        width: 100%; /* Chiếm toàn bộ chiều rộng để tự xuống dòng */
-        text-align: center; /* Căn giữa chữ */
-        font-size: 0.9rem;
-        line-height: 1.5;
-        margin-top: 0;
-    }
+    display: flex;
+    align-items: center;     /* logo và text căn giữa theo chiều dọc */
+    justify-content: flex-start; /* logo bên trái, text bên phải */
+    gap: 10px;               /* khoảng cách giữa logo và text */
+}
+
+/* Thứ tự hiển thị */
+.top-bar .logo {
+    order: 1; /* Logo trước */
+}
+
+.top-bar-text {
+    order: 2; /* Text sau */
+    width: auto;             /* bỏ full width để nằm cùng dòng */
+    text-align: left;        /* căn trái text */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Nếu có nút thì để xuống dưới */
+.top-bar-button {
+    order: 3;
+    margin-top: 10px;
+    width: 100%;             /* chiếm full chiều ngang */
+    text-align: center;
+}
+
     .top-bar .logo img {
         height: 50px; /* Làm cho logo to hơn một chút */
     }
@@ -445,12 +452,12 @@ body {
 /* === PHẦN ĐÃ SỬA LỖI === */
 @media (max-width: 768px) {
     .hero-illustration > img {
-        content: url('image9.png');
+        content: url('image11.png');
     }
 }
 
 @media (min-width: 769px) {
     .hero-illustration > img {
-        content: url('image8.png');
+        content: url('image10.png');
     }
 }

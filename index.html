@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sân Quà Cực Xịn - Thi Thử Càng Hăng</title>
+    <title>Đăng kí khóa học miễn phí </title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="logo">
@@ -19,21 +18,18 @@
             <p class="top-bar-text">
                 Sieuhoc.com - Nền tảng học ONLINE toàn diện từ lớp 7 - 12, được Bộ Công Thương cấp phép hoạt động
             </p>
-            <a href="#form-dang-ky" class="top-bar-button" id="scroll-to-form">
-                ĐĂNG KÝ<br>NGAY
-            </a>
         </div>
     </div>
-
+   
     <header class="hero-section">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-illustration">
-                    <img src="image8.png" alt="Học tập illustrations">
+                    <img src="image10.png" alt="Học tập illustrations">
 
                     <div class="registration-form">
                         <div class="form-container" id="form-dang-ky">
-                            <h2>TRỔ TÀI THI THỬ<br>NHẬN QUÀ LIỀN TAY</h2>
+                            <h2>ĐIỀN THÔNG TIN ĐỂ ĐĂNG KÍ KHÓA HỌC</h2>
                             <form action="https://formspree.io/f/xovnbpke" method="POST" id="formspree-register-form">
                                 <div class="countdown-timer">
                                     <div class="time-unit">
@@ -53,7 +49,7 @@
                                 <input type="tel" name="phone" placeholder="Số điện thoại" required>
                                 <input type="email" name="email" placeholder="Email" required>
                                 <select name="class" required>
-                                    <option value="">Chọn lớp thi thử</option>
+                                    <option value="">Chọn lớp</option>
                                     <option value="12">Lớp 12</option>
                                     <option value="11">Lớp 11</option>
                                     <option value="10">Lớp 10</option>
@@ -62,7 +58,7 @@
                                 <div id="thankyou-popup">
   <div class="popup-content">
     <h2>🎉 Đăng ký thành công!</h2>
-    <p>Bạn được <span class="highlight">tặng khóa học miễn phí lớp <span id="user-class"></span></span></p>
+    <p>Khóa học <span class="highlight"> miễn phí lớp <span id="user-class"></span></span></p>
 
     <div class="account-box">
       <p>📧 <strong>Tài khoản:</strong> <span id="user-email"></span></p>
@@ -73,16 +69,6 @@
       <a href="https://sieuhoc.com" target="_blank">sieuhoc.com</a> 
       sau <span class="highlight">30 phút</span> để bắt đầu học tập.
     </p>
-
-    <h3>💡 Mẹo dành cho bạn</h3>
-    <ul>
-      <li>Càng làm nhiều bài tập trên web, cơ hội đạt giải của bạn càng cao.</li>
-      <li>Sẽ có một số câu về <strong>sieuhoc.com</strong>!</li>
-      <li>Quét QR để nhận <strong>mã quay thưởng </strong>.</li>
-    </ul>
-    <div class="qr-box">
-      <img src="qrcode.jpg" alt="QR Code">
-    </div>
 
     <button class="close-btn" onclick="document.getElementById('thankyou-popup').style.display='none'">Đóng</button>
   </div>
@@ -96,26 +82,7 @@
             </div>
         </div>
     </header>
-
-    <main>
-    <section class="quick-nav">
-        <div class="container">
-            <a href="#giai-thuong" class="nav-button">GIẢI THƯỞNG</a>
-            <a href="#the-le" class="nav-button">THỂ LỆ</a>
-        </div>
-    </section>
-
-    <section id="the-le" class="rules-center-section">
-        <div class="container" style="display:flex;justify-content:center;align-items:center;">
-            <img src="image6.png" alt="Thể lệ cuộc thi" style="max-width:100%;border-radius:12px;box-shadow:0 6px 32px rgba(59,130,246,0.13);">
-        </div>
-    </section>
-
-    <section id="giai-thuong" class="awards-section-simple">
-        <div class="container">
-            <img src="image5.png" alt="Thông tin giải thưởng Săn Quà Cực Xịn">
-        </div>
-    </section>
+ <main>
 
     <section class="benefits-section">
         <div class="container benefits-content">
@@ -125,7 +92,6 @@
         </div>
     </section>
 </main>
-
     <script src="script.js"></script>
     
 </body>
