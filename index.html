@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,7 +30,7 @@
 
                     <div class="registration-form">
                         <div class="form-container" id="form-dang-ky">
-                            <h2>ĐIỀN THÔNG TIN ĐỂ ĐĂNG KÍ KHÓA HỌC</h2>
+                            <h2>ĐĂNG KÍ LIỀN TAY NHẬN NGAY ƯU ĐÃI</h2>
                             <form action="https://formspree.io/f/xovnbpke" method="POST" id="formspree-register-form">
                                 <div class="countdown-timer">
                                     <div class="time-unit">
@@ -53,6 +54,9 @@
                                     <option value="12">Lớp 12</option>
                                     <option value="11">Lớp 11</option>
                                     <option value="10">Lớp 10</option>
+                                    <option value="9">Lớp 9</option>
+                                    <option value="8">Lớp 8</option>
+                                    <option value="7">Lớp 7</option>
                                 </select>
                                 <button type="submit" class="cta-button primary">ĐĂNG KÝ NGAY</button>
                                 <div id="thankyou-popup">
@@ -113,5 +117,52 @@ document.getElementById('scroll-to-form').addEventListener('click', function(e) 
         document.getElementById('thankyou-popup').style.display = 'flex';
     });
 </script>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Trí Tuệ Siêu Việt</h4>
+                    <p class="slogan">Vì tương lai tương sáng - Vì nước Việt phồn vinh</p>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Văn phòng 02, Tầng 09, Tòa nhà Pearl Plaza, số 561A Điện Biên Phủ, Phường 25, Quận Bình Thạnh, TP Hồ Chí Minh</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>0775065224</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>trituesieuvietvn@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <div class="social-icons-wrapper">
+                        <a href="https://www.facebook.com/profile.php?id=61566538827506" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@siu.hc2?_t=ZS-8wyYAyJ2Z5l&_r=1" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@trituesieuviet7290/featured" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="bct-seal">
+                        <a href="http://online.gov.vn/Home/WebDetails/117753" target="_blank" rel="noopener noreferrer" title="Đã đăng ký Bộ Công Thương">
+                            <img src="image12.png" alt="Đã đăng ký Bộ Công Thương">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="footer-bottom">
+                <p>&copy; 2022 Trí Tuệ Siêu Việt</p>
+                <p><strong class="tax-code">Mã số thuế:</strong> 0317425467 cấp ngày 10/08/2022 tại Sở Kế hoạch và đầu tư TPHCM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

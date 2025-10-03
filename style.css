@@ -461,3 +461,156 @@ body {
         content: url('image10.png');
     }
 }
+
+/* =======================
+   STYLING CHO FOOTER
+   ======================= */
+.site-footer {
+    background-color: #26272b;
+    color: #b9b9b9;
+    padding: 50px 0 30px 0;
+    font-size: 14px;
+    line-height: 1.6;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;
+}
+
+.site-footer .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.site-footer .footer-info {
+    flex: 2;
+    min-width: 300px;
+}
+
+.site-footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.site-footer .slogan {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.site-footer .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer .contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.site-footer .contact-info i {
+    color: var(--primary-orange, #F59E0B);
+    font-size: 14px;
+    width: 25px;
+    text-align: center;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.site-footer .contact-info span {
+    margin-left: 10px;
+}
+
+/* Social + BCT */
+.site-footer .footer-social {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-social .social-icons-wrapper {
+    margin-bottom: 15px;
+}
+
+.site-footer .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.site-footer .social-icon:hover {
+    transform: scale(1.1);
+}
+
+.site-footer .social-icon.facebook { background-color: #3b5998; }
+.site-footer .social-icon.instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.site-footer .social-icon.tiktok { background-color: #000000; }
+.site-footer .social-icon.linkedin { background-color: #007bb5; }
+.site-footer .social-icon.youtube { background-color: #c4302b; }
+
+.bct-seal img {
+    max-width: 160px;
+    height: auto;
+    display: inline-block;
+}
+
+.site-footer hr {
+    border-top: 1px solid #474747;
+    margin: 30px 0;
+}
+
+.site-footer .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+}
+
+.site-footer .footer-bottom p {
+    margin: 5px 0;
+}
+
+.site-footer .tax-code {
+    color: var(--secondary-red, #EF4444);
+    font-weight: bold;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .site-footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .site-footer .footer-info {
+        text-align: center;
+    }
+    .site-footer .contact-info li {
+        justify-content: center;
+    }
+    .footer-social {
+        margin-top: 20px;
+    }
+    .bct-seal {
+        margin-top: 10px;
+    }
+}
